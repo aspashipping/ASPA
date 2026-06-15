@@ -3,7 +3,9 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
   // Base URL for GitHub Pages (repo name)
-  base: "/ASPA/",
+  vite: {
+    base: "/ASPA/",
+  },
   tanstackStart: {
     defaultSsr: false,
     // Enable static prerendering of all routes
