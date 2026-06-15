@@ -4,7 +4,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   // Base URL for GitHub Pages (repo name)
   vite: {
-    base: "/ASPA/",
+    base: "/",
   },
   tanstackStart: {
     defaultSsr: false,
