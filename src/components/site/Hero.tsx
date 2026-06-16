@@ -4,9 +4,11 @@ import { ArrowRight } from "lucide-react";
 import heroPort from "@/assets/hero-port.jpg";
 import overview from "@/assets/overview.jpg";
 import airFreight from "@/assets/air-freight.jpg";
+import why from "@/assets/why-aspa.jpg";
 import fcl from "@/assets/fcl.jpg";
 
-const images = [heroPort, overview, airFreight, fcl];
+const images = [why, heroPort, overview, airFreight, fcl];
+const alts = ["Why ASPA", "Hero Port", "Overview", "Air Freight", "FCL"];
 
 export function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,17 +28,17 @@ export function Hero() {
           <motion.img
             key={currentIndex}
             src={images[currentIndex]}
-            alt="Global logistics operations background"
+            alt={alts[currentIndex]}
             initial={{ opacity: 0, scale: 1.05 }}
             animate={{ opacity: 1, scale: 1.02 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
-            className="absolute inset-0 h-full w-full object-cover object-center"
+            className="absolute inset-0 h-full w-full object-cover object-center" style={{ filter: 'brightness(1.2)' }}
           />
         </AnimatePresence>
         {/* Dark overlay: from dark brand color to subtle side lighting */}
-        <div className="absolute inset-0 bg-neutral-950/60 z-10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/40 to-neutral-950/30 z-10" />
+        <div className="absolute inset-0 bg-neutral-950/40 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/20 to-neutral-900/10 z-10" />
       </div>
 
       {/* Content Container */}
