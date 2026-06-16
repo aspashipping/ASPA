@@ -40,7 +40,7 @@ export const Route = createFileRoute("/")({
           "sameAs": [
             "https://www.facebook.com/ASPAShipping",
             "https://twitter.com/ASPA_Shipping",
-            "https://www.linkedin.com/company/aspa-shipping"
+            "https://www.linkedin.com/company/aspashipping"
           ]
         })
       },
